@@ -1,12 +1,64 @@
 <!DOCTYPE html>
-<html lang="esp"> 
-<head>
+<!--Doctype es una sentencia que indica que voy a trabajar con un
+documento de HTML-->
+
+<html lang="es"><!--Aqui inicia mi página con a etiqueta html-->
+<head> <!--Aqui en el head esta todo lo que no es visible en la pagima pero lo hace funcional->
+<---Con los metadatos puede colocar caracteres especiale, dar informacion al SEO para posicionarme-->
+<meta charset="UTF-8"> <!--Permite caracteres especiales-->
+  <meta name="description" content="Musical de Indie Rock">
+  <meta name="author" content="Leonardo Rodriguez">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
 <title>Musical Gigi</title>
 </head>
 <body>
 
-<h1>Musical Gigi</h1>
-<p></p>indie rock</p>
+<div class ="container-musical">
+    <img src="img.jpg" alt="Imagen de Navidad" class="imagen-portada">
 
+    <h1>Musical Gigi</h1>
+    <p class= "pmusical">Musica para proyectarse</p>
+
+     <div class="lista-canciones">
+        <!--CANCION 1-->
+        <div class="canciones">
+            <p>🐇 Dont delete the kisses Wolf Alice</p>
+             <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="dontdeletethekisses.mp3" type="audio/mpeg">
+                </audio>
+        </div>   
+
+         <!--CANCION 2-->
+        <div class="canciones">
+            <p>🎸 I wouldnt mind Wallows</p>
+             <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Iwouldntmind.mp3" type="audio/mpeg">
+                </audio>
+        </div>  
+
+         <!--CANCION 3-->
+        <div class="canciones">
+            <p>🥀 Loser Sunday Cruise</p>
+             <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Loser.mp3" type="audio/mpeg">
+                </audio>
+        </div>      
+
+
+
+
+
+
+
+
+     
+     </div>
 </body>
 </html>
