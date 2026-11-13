@@ -7,7 +7,7 @@ documento de HTML-->
 <---Con los metadatos puede colocar caracteres especiale, dar informacion al SEO para posicionarme-->
 <meta charset="UTF-8"> <!--Permite caracteres especiales-->
   <meta name="description" content="Musical de Indie Rock">
-  <meta name="author" content="Leonardo Rodriguez">
+  <meta name="author" content="Giselle Gonzalez">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
@@ -22,43 +22,56 @@ documento de HTML-->
 
     <h1>Musical Gigi</h1>
     <p class= "pmusical">Musica para proyectarse</p>
-
-     <div class="lista-canciones">
+    
+     <!-- <div class="lista-canciones"> -->
         <!--CANCION 1-->
-        <div class="canciones">
+        <!-- <div class="canciones">
             <p>🐇 Dont delete the kisses Wolf Alice</p>
-             <audio controls class="audio-player">
+             <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="dontdeletethekisses.mp3" type="audio/mpeg">
+                   <!--  <source src="kisses.mp3" type="audio/mpeg">
                 </audio>
-        </div>   
+        </div>    -->
 
          <!--CANCION 2-->
-        <div class="canciones">
-            <p>🎸 I wouldnt mind Wallows</p>
-             <audio controls class="audio-player">
+        <!-- <div class="canciones">
+            <p>🎸 I wouldnt mind</p>
+             <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Iwouldntmind.mp3" type="audio/mpeg">
+                   <!--  <source src="mind.mp3" type="audio/mpeg">
                 </audio>
-        </div>  
+        </div>   -->
 
          <!--CANCION 3-->
-        <div class="canciones">
-            <p>🥀 Loser Sunday Cruise</p>
-             <audio controls class="audio-player">
+       <!--  <div class="canciones">
+            <p>🥀 Loser</p>
+             <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Loser.mp3" type="audio/mpeg">
+                   <!--  <source src="Loser.mp3" type="audio/mpeg">
                 </audio>
-        </div>      
+        </div> 
+        </div>  -->
+
+     <!-- UNA SOLA CAJA DE REPRODUCTOR -->
+      <div class="canciones">
+        <!-- 1. Le ponemos id="nombre-cancion" para que JS cambie el texto -->
+        <p id="nombre-cancion">🐇 Dont delete the kisses</p>
+        
+        <!--  Un solo audio con id="audio-player" -->
+        <audio id="audio-player" controls class="audio-player">
+          <source src="kisses.mp3" type="audio/mpeg">
+        </audio>
 
 
+        <!-- Agregamos los botones para avanzar y retroceder -->
+        <div class="controles">
+          <button id="btn-anterior">⏮ Anterior</button>
+          <button id="btn-siguiente">Siguiente ⏭</button>
+        </div>
+      </div>
 
-
-
-
-
-
-     
      </div>
+
+<script src="script.js"></script>     
 </body>
 </html>
